@@ -1,0 +1,582 @@
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.nav-link{
+    color: white !important;
+}
+body {
+    overflow-x: hidden;
+    background-color: #292D36;
+}
+.nav-link .nav-item :hover{
+    color: #00ffff !important;
+}
+
+.navbar .nav-link{
+     margin: 0 20px; /
+}
+.navbar-toggler {
+    border: none; /* Remove the border if needed */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove the default icon */
+}
+
+.navbar-toggler-icon:before {
+    content: '';
+    display: block;
+    width: 30px; /* Width of the bars */
+    height: 2px; /* Thickness of the bars */
+    background-color: #ff0000; /* Change to your desired color */
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #15EDD4; /* Change to your desired color */
+    margin: 5px 0; /* Spacing between the bars */
+}
+
+
+
+
+.business-card {
+    background-color: #1a1a1a;
+    border-radius: 105px 5px 105px 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    max-width: 310px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.job-title {
+    color: #00ffff;
+    font-size: 1.2rem;
+}
+
+.download-cv {
+    background-color: #00ffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #1a1a1a;
+    cursor: pointer;
+    margin-top: 20px;
+}
+@media (max-width: 800px) {
+    .nav-link {
+        font-size: 16px;
+    }
+    .main {
+        width: 90%; /* Make the card take more space on smaller screens */
+    }
+    
+}
+.display-4{
+    color: white;
+}
+.side   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text */
+}
+
+.number {
+    font-size: 2.72rem; /* Adjust size as needed */
+    color: #15EDD4;
+    font-weight: bold;    
+}
+
+.title {
+     /* Make the title bold */
+    margin: 0; /* Remove margin */
+}
+
+.description {
+    margin-top: 0; /* Remove margin if not needed */
+}
+.box-curve {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #292D36;
+    
+    
+}
+
+.pill {
+    padding: 20px;
+    border-radius: 85px 80px 85px 80px;
+    background-color: #2a2a2a;
+    max-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5)
+}
+
+.display-4 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.number {
+    color: #00ffff;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.title, .description {
+    color: #fff;
+}
+.second-bg{
+    background-image: url('/static/do.jpg');
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+.fourth-bg{
+    
+        background-image: url('/static/do.jpg');
+        background-attachment: fixed;
+        margin-bottom: 50px;
+    
+}
+.fourth-bg {
+    background-image: url('/static/do.jpg');
+    background-attachment: fixed;
+      /* Ensures the image covers the entire background */
+    background-position: center;  /* Centers the background image */
+    margin-bottom: 50px;
+    width: 100vw;  /* Use viewport width for full width */
+    height: auto;  /* Allow height to adjust based on content */
+    position: relative;  /* Helps with positioning if needed */
+    left: 50%;  /* Center it */
+    right: 50%;  /* Center it */
+    margin-left: -50vw;  /* Adjust for full width */
+    margin-right: -50vw;  /* Adjust for full width */
+}
+
+
+
+    .html{
+        background-color: rgb(255, 108, 17);
+        
+    }
+    .css{
+        background-color: #0C72B7;
+    }
+    .icon-container {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #f06529; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+.icon-container2 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #0C72B7; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+.icon-container3 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: rgb(236,162,22); /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  */
+}
+.icon-container4 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #2D5374; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+.icon-container5 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #0875BE; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  */
+}
+.icon-container6 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #FE0809; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+
+.icon-container7 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #f06529; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+
+.icon-container8 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #1fffc7; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+
+
+    .skillbox{
+    box-shadow: 10px 0px 0px 0px  blue !important ; 
+    background-color: #96FAEC;
+    border-radius: 10px;
+}
+.lkl{
+    color: #00ffff;
+    font-family: '';
+}
+.abb{
+    border: 2px solid #00ffff;
+    border-radius: 40px 5px 40px 5px;
+    background-color: #292D36;
+    max-width: 300px;
+}
+.ii{
+    border-radius: 20px;
+}
+.abbox{
+    background-color: #292D36;
+    border-radius: 20px;
+}
+.third-bg {
+    position: relative; /* Make the parent relative */
+}
+
+.third-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/codd.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.1; /* Adjust this value for the background opacity */
+    z-index: -1; /* Place behind the content */
+}
+
+h4 {
+    position: relative; /* Ensure the text is above the pseudo-element */
+    z-index: 1; /* Keep text on top */
+    color: white; /* Optional: change text color for visibility */
+}
+
+  
+  
+    /* Footer Styling */
+.footer {
+    background: #0d0d0d;
+    position: relative;
+    z-index: 1;
+}
+
+.footer .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer h5 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Playpen Sans', cursive;
+    margin-bottom: 1.5rem;
+}
+
+.footer .quote {
+    font-style: italic;
+    color: #fff;
+}
+
+.footer .quick-links {
+    font-family: 'Playpen Sans', cursive;
+}
+
+.footer .quick-links li {
+    margin-bottom: 10px;
+}
+
+.footer .quick-links li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .quick-links li a:hover {
+    color: #15EDD4;
+}
+
+.footer .social-icons {
+    font-size: 1.8rem;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #15EDD4;
+}
+
+.footer .contact-info p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+@keyframes moveBackground {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+
+@media (max-width: 768px) {
+    .footer .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .footer .quote {
+        font-size: 1rem;
+    }
+    .footer .quick-links li a {
+        font-size: 1rem;
+    }
+    .footer .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #00ffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+/* Custom Button Styling */
+.btn-custom {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn-custom:hover {
+  background: rgb(61, 106, 255);
+  color: white;
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.btn-custom:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.btn-custom::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.btn-custom:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+    /* Customize the navigation arrows */
+    .owl-prev, .owl-next {
+        color: white !important;  /* Make the arrows white */
+        font-size: 40px;          /* Increase arrow size */
+        background-color: rgba(0, 0, 0, 0.5); /* Add background color */
+        border-radius: 50%;       /* Make arrows round */
+        padding: 10px;            /* Add padding */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    /* Position the left and right arrows */
+    .owl-prev {
+        left: 10px;  /* Position of the left arrow */
+    }
+
+    .owl-next {
+        right: 10px; /* Position of the right arrow */
+    }
+
+    /* Optional: Adding space between items */
+    .owl-carousel .item {
+        margin: 10px;  /* Adjust space between items */
+    }
+
+    /* Optional: Highlight the active item */
+
+    .owl-item.active .card {
+        border: 2px solid #00ffff;  
+        border-radius: 20px;
+        /* Optional: Highlight active card */
+    }
+    
+    .owl-item.active:hover .card {
+        border: 10px solid #00ffff;  
+        padding: 40px;
+        /* Optional: Highlight active card */
+    }
+    
