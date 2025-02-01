@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-weight: 300;">Portfolio</title>
+    <!-- Bootstrap CDN !-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- OWL CAROUSAL CDN !-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.nav-link{
+    color: white !important;
+}
+body {
+    overflow-x: hidden;
+    background-color: #292D36;
+}
+.nav-link .nav-item :hover{
+    color: #00ffff !important;
+}
+
+.navbar .nav-link{
+     margin: 0 20px; /
+}
+.navbar-toggler {
+    border: none; /* Remove the border if needed */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove the default icon */
+}
+
+.navbar-toggler-icon:before {
+    content: '';
+    display: block;
+    width: 30px; /* Width of the bars */
+    height: 2px; /* Thickness of the bars */
+    background-color: #ff0000; /* Change to your desired color */
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #15EDD4; /* Change to your desired color */
+    margin: 5px 0; /* Spacing between the bars */
+}
+
+
+
+
+.business-card {
+    background-color: #1a1a1a;
+    border-radius: 105px 5px 105px 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    max-width: 310px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.job-title {
+    color: #00ffff;
+    font-size: 1.2rem;
+}
+
+.download-cv {
+    background-color: #00ffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #1a1a1a;
+    cursor: pointer;
+    margin-top: 20px;
+}
+@media (max-width: 800px) {
+    .nav-link {
+        font-size: 16px;
+    }
+    .main {
+        width: 90%; /* Make the card take more space on smaller screens */
+    }
+    
+}
+.display-4{
+    color: white;
+}
+.side   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text */
+}
+
+.number {
+    font-size: 2.72rem; /* Adjust size as needed */
+    color: #15EDD4;
+    font-weight: bold;    
+}
+
+.title {
+     /* Make the title bold */
+    margin: 0; /* Remove margin */
+}
+
+.description {
+    margin-top: 0; /* Remove margin if not needed */
+}
+.box-curve {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #292D36;
+    
+    
+}
+
+.pill {
+    padding: 20px;
+    border-radius: 85px 80px 85px 80px;
+    background-color: #2a2a2a;
+    max-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5)
+}
+
+.display-4 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.number {
+    color: #00ffff;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.title, .description {
+    color: #fff;
+}
+.second-bg{
+    background-image: url('/static/do.jpg');
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+.fourth-bg{
+    
+        background-image: url('/static/do.jpg');
+        background-attachment: fixed;
+        margin-bottom: 50px;
+    
+}
+.fourth-bg {
+    background-image: url('/static/do.jpg');
+    background-attachment: fixed;
+      /* Ensures the image covers the entire background */
+    background-position: center;  /* Centers the background image */
+    margin-bottom: 50px;
+    width: 100vw;  /* Use viewport width for full width */
+    height: auto;  /* Allow height to adjust based on content */
+    position: relative;  /* Helps with positioning if needed */
+    left: 50%;  /* Center it */
+    right: 50%;  /* Center it */
+    margin-left: -50vw;  /* Adjust for full width */
+    margin-right: -50vw;  /* Adjust for full width */
+}
+
+
+
+    .html{
+        background-color: rgb(255, 108, 17);
+        
+    }
+    .css{
+        background-color: #0C72B7;
+    }
+    .icon-container {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #f06529; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+.icon-container2 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #0C72B7; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+.icon-container3 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: rgb(236,162,22); /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  */
+}
+.icon-container4 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #2D5374; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+.icon-container5 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #0875BE; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  */
+}
+.icon-container6 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #FE0809; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+
+.icon-container7 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #f06529; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+
+.icon-container8 {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    background-color: #1fffc7; /* Background color for the circle */
+    margin: 0 auto; /* Center the circle within the column */
+    border-radius: 50%; /* Make it a perfect circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow  0875BE*/
+}
+
+
+    .skillbox{
+    box-shadow: 10px 0px 0px 0px  blue !important ; 
+    background-color: #96FAEC;
+    border-radius: 10px;
+}
+.lkl{
+    color: #00ffff;
+    font-family: '';
+}
+.abb{
+    border: 2px solid #00ffff;
+    border-radius: 40px 5px 40px 5px;
+    background-color: #292D36;
+    max-width: 300px;
+}
+.ii{
+    border-radius: 20px;
+}
+.abbox{
+    background-color: #292D36;
+    border-radius: 20px;
+}
+.third-bg {
+    position: relative; /* Make the parent relative */
+}
+
+.third-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/codd.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.1; /* Adjust this value for the background opacity */
+    z-index: -1; /* Place behind the content */
+}
+
+h4 {
+    position: relative; /* Ensure the text is above the pseudo-element */
+    z-index: 1; /* Keep text on top */
+    color: white; /* Optional: change text color for visibility */
+}
+
+
+</style>
+<body>
+    <div class="container-fluid newm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="font-family:'Playpen Sans', serif;  font-style: normal; color: white;" href="#">faizalimam</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  mx-auto" >
+                    <li class="nav-item" "><a class="nav-link active"  href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#aboutme">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#techstack">Techstack</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid newm">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mt-5  mb-5">
+                <div class="business-card mx-auto text-center">
+                    <div class="profile-picture">
+                        <!-- Flask-compatible static image path -->
+                        <img src="{{ url_for('static', filename='developer.png') }}" alt="Profile Picture" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="info">
+                        <h1>Faizal Imam</h1>
+                        <p class="job-title">Full-Stack Developer</p>
+                        <p class="email"><i style="color: #15EDD4;" class="fa-regular fa-envelope"></i> &nbsp; faizalimam017@gmail.com</p>
+                        <p class="location text-left ml-4 "><i style="color: #15EDD4;" class="fa-solid fa-location-dot"></i> &nbsp; India</p>
+                        <p class="text-left ml-4"><i class="fa-solid fa-user-ninja" style="color: #15EDD4;"></i> Full-time / Freelancer</p>
+                        <p class="email text-left ml-4"><i style="color: #15EDD4;" class="fa-solid fa-globe"></i>&nbsp; faizalimam990.github.io</p>
+                        <button class="btn download-cv">Download CV</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-5" style="font-family: 'Playpen Sans', cursive;">
+                <p class="text-justify pp" style="color: #15EDD4;">&lt; H1 &gt;</p>
+                <h4 class="display-4">Hi,</h4>
+                <h4 class="display-4">I am <span style="color: #15EDD4;">Faizal Imam</span></h4>
+                <p class="display-4" style="display: inline;">Full Stack <span style="color: #15EDD4;">Developer</span></p>
+                <p class="text-justify pp" style="color: #15EDD4;">&lt;/H1&gt;</p>
+                <p class="text-justify pp" style="color: #15EDD4;">&lt;p&gt;</p>
+                <p class="text-justify text-light" style="color: #15EDD4;">I am a full stack developer and AI/ML researcher. I help businesses grow by creating dynamic web applications and implementing machine learning solutions.</p>
+                <p class="text-justify" style="color: #15EDD4;">&lt;/p&gt;</p>
+            </div>
+
+            <div class="col-md-4 box-curve align-self-center">
+                <div class="pill mx-auto">
+                    <h4 class="display-4 side">
+                        <span class="number">4</span>
+                        <span class="title" style="font-size: 1.72rem;">Programming</span>
+                        <span class="description" style="font-size: 1.72rem;">languages</span>
+                    </h4>
+                    <h4 class="display-4 side">
+                        <span class="number">3</span>
+                        <span class="title" style="font-size: 1.72rem;">Development</span>
+                        <span class="description" style="font-size: 1.72rem;">Tools</span>
+                    </h4>
+                    <h4 class="display-4 side">
+                        <span class="number">4</span>
+                        <span class="title" style="font-size: 1.72rem;">Different</span>
+                        <span class="description" style="font-size: 1.72rem;">Technologies</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid second-bg">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 mx-auto d-flex justify-content-center align-items-start mt-5" style="font-family: 'Playpen Sans', cursive;">
+                    <div>
+                        <h4 class="display-4 p-3" style="border: 2px solid #00ffff; border-radius: 40px 5px; background-color: #292D36; max-width: 300px;" id="aboutme">About Me</h4>
+                        <div class="container-fluid p-3 abbox mb-5">
+                            <p class="text-justify" style="color: #15EDD4;">&lt;p&gt;</p>
+                            <p class="text-justify" style="color: #15EDD4; font-size: 1.92rem;">Hello!</p>
+                            <p class="text-justify text-light" style="color: #15EDD4;">I'm Faizal Imam, a passionate Full Stack Django Developer with a strong foundation in web development and a keen interest in cybersecurity. My tech stack includes <span style="color: #15EDD4;">HTML5, CSS3, JavaScript, Python, and Django</span>, allowing me to craft user-friendly web applications and dynamic platforms.</p>
+                            <p class="text-justify" style="color: #15EDD4;">&lt;/p&gt;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <div class="mb-3">
+                        <div class="img-box">
+                            <!-- Flask-compatible static image path -->
+                            <img src="{{ url_for('static', filename='carbon1.png') }}" alt="Carbon" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+<div class="container-fluid third-bg">
+    <div class="container">
+        <h4 class="display-4 mt-5 text-center p-3 text-light" style=" opacity: 1; font-family: 'Playpen Sans', cursive;" id="skills" >Skills</h4>
+        <p class="text-center text-light" style=" font-family: 'Playpen Sans', cursive;">I am striving to never stop learning and improving</p>
+        <div class="row container-fluid">
+            <div class="col-md-4" style=" font-family: 'Playpen Sans', cursive; ">
+                <div class="text  skillbox ">
+                    <i class=" fa-3x fa-solid fa-code d-flex justify-content-center "  ></i><br>
+                    <h4 class="display-5 text-center text-dark">Frontend Development</h4>
+                    <p class="text d-flex justify-content-center  ">HTMLCSS,JAVASCRIPT</p>
+                </div>
+
+                
+            </div>
+            <div class="col-md-4" style=" font-family: 'Playpen Sans', cursive; ">
+                <div class="text  skillbox  ">
+                    <i class=" fa-3x fa-brands fa-python d-flex justify-content-center "  ></i><br>
+                    <h4 class="display-5 text-center text-dark">Backend Development</h4>
+                    <p class="text d-flex justify-content-center  ">Python-Django,SQL</p>
+                </div>
+
+                
+            </div>
+            
+            <div class="col-md-4" style=" font-family: 'Playpen Sans', cursive; ">
+                <div class="text  skillbox  ">
+                    <i class=" fa-3x fa-brands fa-docker d-flex justify-content-center "  ></i><br>
+                    <h4 class="display-5 text-center text-dark">Deployment</h4>
+                    <p class="text d-flex justify-content-center  ">Docker,Kubernetes</p>
+                </div>
+
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <h4 class="display-4 mt-5 text-center p-3 text-light" style=" opacity: 1; font-family: 'Playpen Sans', cursive;" id="techstack" >Tech Stack</h4>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row" style=" font-family: 'Playpen Sans', cursive; ">
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-brands fa-html5 text-white"></i>
+                    </div>
+                    <p class="text-light">HTML</p>
+                </div>
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container2 rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-brands fa-css3-alt text-white"></i>
+                    </div>
+                    <p class="text-light">CSS</p>
+                </div>
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container3 rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-brands fa-js text-white"></i>
+                    </div>
+                    <p class="text-light">JavaScript</p>
+                </div>
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container4 rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-brands fa-python text-white"></i>
+                    </div>
+                    <p class="text-light text-justify">Python/Django/Flask</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style=" font-family: 'Playpen Sans', cursive; ">
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container5 rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-brands fa-docker text-white"></i>
+                    </div>
+                    <p class="text-light">Docker</p>
+                </div>
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container6 rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-solid fa-database text-white"></i>
+                    </div>
+                    <p class="text-light">MySQL</p>
+                </div>
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container7 rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-brands fa-git-alt text-white"></i>
+                    </div>
+                    <p class="text-light">Git</p>
+                </div>
+                <div class="col-6 col-md-3 mt-3 text-center">
+                    <div class="icon-container8 rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-4x fa-solid fa-diagram-project text-white"></i>
+                    </div>
+                    <p class="text-light">RestAPI/FastApi</p>
+                </div>
+            </div>
+        </div>
+        
+            
+        </div>
+    </div>
+</div>
+</div>
+<h4 class="display-4 text-center lkl" id="projects">Projects</h4>
+<div class="container-fluid">
+    <div class="owl-carousel owl-theme" id="carouselExample">
+        {% for pro in pobj %}
+            <div class="item col-md-4 col-sm-6">
+                <div class="card item-card  p-3 bg-dark text-white" style="width: 18rem;">
+                    <!-- Dynamically display the image -->
+                    <img class="card-img-top img-fluid" 
+                    src="{{ url_for('static', filename='projectimages/' + pro.image_filename) }}" 
+                    alt="Project image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pro.Title }}</h5>
+                        <p class="card-text">{{ pro.Description[:70] }}</p>
+                        <a  style="text-decoration: none;" href="{{ url_for('project_detail', id=pro.id) }}" class="btn-custom">View project</a>
+                    </div>
+                </div>
+            </div>  
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container-fluid" id="certification">
+    <h4 class="display-4 text-center " style="color: #00ffff; font-family: 'Playpen Sans', cursive; font-size: 1.7rem ;">Certifications</h4>
+    
+    <div class="row col-12 ">
+        <div class="col-6 col-sm-6 col-md-4 p-4">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQEgUQ4Vh7TTqA/feedshare-shrink_1280/B4DZSxoOShG4Ak-/0/1738146899704?e=1741219200&v=beta&t=5y6Ab_WSiQMc-NW9AkhjHsmkdZh1dI8aS6gYSKYV9-Y" class="img-fluid" alt="Fynd-Python-essentials-certificate">
+            <h4 class="display-5 text-center" style="font-family: 'Playpen Sans', cursive; border-radius: 10px;">Python Essential's</h4>
+            <h4 class="display-6 text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 0.8rem; color: #00ffff;">Issued By:FYND ACADEMY</h4>
+            <div class="text-center">
+                <button><a href="https://classroom.fynd.academy/certificate/6BF6YAn_Tb-2b4FO2Hn5jQ" style="color: white;text-decoration: none;">View Credentials</a></button>
+            </div>
+        </div>
+        
+        <div class="col-6 col-sm-6 col-md-4 p-4">
+            <img src="https://media.licdn.com/dms/image/v2/D562DAQHGxzVy1H-w-Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1728063855300?e=1738782000&v=beta&t=BUZB4SF6H4Pdonr_9o7tXP7MW4JYV0D--KFCIwhghd4" class="img-fluid" alt="Hackrank-Python-certificate">
+            <h4 class="display-5 text-center" style="font-family: 'Playpen Sans', cursive; border-radius: 10px;">Python Certification</h4>
+            <h4 class="display-6 text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 0.8rem; color: #00ffff;">Issued By:Hackerank</h4>
+            <div class="text-center">
+                <button><a href="https://www.hackerrank.com/certificates/8588d117bf4e" style="color: white;text-decoration: none;">View Credentials</a></button>
+            </div>
+        </div>
+        
+        <div class="col-6 col-sm-6 col-md-4 p-4">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQHoZc1mcG-tOQ/feedshare-shrink_800/feedshare-shrink_800/0/1725361287351?e=1741219200&v=beta&t=EfovojAZZ6MjqZAgvBtNYKjZjnz0YiYgmJk1v1w7kTg" class="img-fluid" alt="Django--certificate-course">
+            <h4 class="display-5 text-center" style="font-family: 'Playpen Sans', cursive; border-radius: 10px;">Django Certification</h4>
+            <h4 class="display-6 text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 0.8rem; color: #00ffff;">Issued By:GeekforGeeks</h4>
+            <div class="text-center">
+                <button><a href="https://media.geeksforgeeks.org/courses/certificates/205c09aec9ec40382e237f45f162f3cf.pdf" style="color: white;text-decoration: none;">View Credentials</a></button>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 p-4">
+            <img src="https://media.licdn.com/dms/image/v2/D4D2DAQFhqvGvTP2ogQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1725028913190?e=1738954800&v=beta&t=1yGpBMaVXrTiwOrsWFQH914w_nCsR5Dnfqn0_l-L3m8" class="img-fluid" alt="Django--certificate-course">
+            <h4 class="display-5 text-center" style="font-family: 'Playpen Sans', cursive; border-radius: 10px;">DCJSP</h4>
+            <h4 class="display-6 text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 0.8rem; color: #00ffff;">Issued By:Defronix Cyber Security</h4>
+            <div class="text-center">
+                <button><a href="https://media.licdn.com/dms/image/v2/D4D2DAQFhqvGvTP2ogQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1725028913190?e=1738954800&v=beta&t=1yGpBMaVXrTiwOrsWFQH914w_nCsR5Dnfqn0_l-L3m8" style="color: white;text-decoration: none;">View Credentials</a></button>
+            </div>
+        </div>
+    </div>
+      
+
+
+</div>
+<h4 class="display-4 text-center" id="achivements" style="color: #15EDD4;font-family: 'Playpen Sans',sans-serif;">Achivements</h4>
+<div class="row col-12">
+    <div class="col-6 col-sm-6 col-md-4">
+        <img src="https://media.licdn.com/dms/image/v2/D4D2DAQEZv83erQYInw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1725029076902?e=1739023200&v=beta&t=zmTJxo6HywKNlYZKQ9xPSw7Q7JkmlE4JbI23DmXgP3s" class="img-fluid" alt="" srcset="">
+        <h4 class="display-5 text-center"> Research Paper Presentation In ICRAMDS </h4>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row py-5 text-light">
+            <!-- Left: Logo and Quote -->
+            <div class="col-md-4 text-center">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='developer.png') }}" alt="Logo" class="img-fluid rounded-circle" style="max-width: 120px;">
+                </div>
+                <p class="quote mt-3" style="color: #15EDD4;">"The only way to do great work is to love what you do." - Steve Jobs</p>
+            </div>
+
+            <!-- Middle: Quick Links -->
+            <div class="col-md-4 text-center">
+                <h5>Quick Links</h5>
+                <ul class="quick-links list-unstyled">
+                    <li><a href="#about" style="color: #15EDD4;">About</a></li>
+                    <li><a href="#services" style="color: #15EDD4;">Services</a></li>
+                    <li><a href="#projects" style="color: #15EDD4;">Projects</a></li>
+                    <li><a href="#contact" style="color: #15EDD4;">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Icons and Contact Info -->
+            <div class="col-md-4 text-center">
+                <h5 id="footer">Connect With Me</h5>
+                <div class="social-icons">
+                    <a href="https://github.com/yourgithub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yourlinkedin" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourtwitter" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="contact-info mt-3">
+                    <p><i class="fa-regular fa-envelope" style="color: #15EDD4;"></i> faizalimam017@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot" style="color: #15EDD4;"></i> India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="footer-background"></div>
+</footer>
+
+
+<!-- Include jQuery and Owl Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+<style>
+    
+    /* Footer Styling */
+.footer {
+    background: #0d0d0d;
+    position: relative;
+    z-index: 1;
+}
+
+.footer .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer h5 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Playpen Sans', cursive;
+    margin-bottom: 1.5rem;
+}
+
+.footer .quote {
+    font-style: italic;
+    color: #fff;
+}
+
+.footer .quick-links {
+    font-family: 'Playpen Sans', cursive;
+}
+
+.footer .quick-links li {
+    margin-bottom: 10px;
+}
+
+.footer .quick-links li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .quick-links li a:hover {
+    color: #15EDD4;
+}
+
+.footer .social-icons {
+    font-size: 1.8rem;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #15EDD4;
+}
+
+.footer .contact-info p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+@keyframes moveBackground {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+
+@media (max-width: 768px) {
+    .footer .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .footer .quote {
+        font-size: 1rem;
+    }
+    .footer .quick-links li a {
+        font-size: 1rem;
+    }
+    .footer .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #00ffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+/* Custom Button Styling */
+.btn-custom {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn-custom:hover {
+  background: rgb(61, 106, 255);
+  color: white;
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.btn-custom:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.btn-custom::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.btn-custom:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+</style>
+<!-- Initialize Owl Carousel -->
+<script>
+    $(document).ready(function() {
+        $('#carouselExample').owlCarousel({
+            loop: true,                 // Enable infinite looping
+            margin: 10,                 // Margin between items
+            nav: true,                  // Enable next/prev buttons
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"], // Custom arrow icons
+            responsive: {
+                0: {
+                    items: 1            // For mobile, 1 item per slide
+                },
+                600: {
+                    items: 2            // For tablet, 2 items per slide
+                },
+                1000: {
+                    items: 4         // For desktop, 3 items per slide
+                }
+            }
+        });
+    });
+</script>
+
+<style>
+    /* Customize the navigation arrows */
+    .owl-prev, .owl-next {
+        color: white !important;  /* Make the arrows white */
+        font-size: 40px;          /* Increase arrow size */
+        background-color: rgba(0, 0, 0, 0.5); /* Add background color */
+        border-radius: 50%;       /* Make arrows round */
+        padding: 10px;            /* Add padding */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    /* Position the left and right arrows */
+    .owl-prev {
+        left: 10px;  /* Position of the left arrow */
+    }
+
+    .owl-next {
+        right: 10px; /* Position of the right arrow */
+    }
+
+    /* Optional: Adding space between items */
+    .owl-carousel .item {
+        margin: 10px;  /* Adjust space between items */
+    }
+
+    /* Optional: Highlight the active item */
+
+    .owl-item.active .card {
+        border: 2px solid #00ffff;  
+        border-radius: 20px;
+        /* Optional: Highlight active card */
+    }
+    
+    .owl-item.active:hover .card {
+        border: 10px solid #00ffff;  
+        padding: 40px;
+        /* Optional: Highlight active card */
+    }
+    
+</style>
+
+</body>
+</html>
